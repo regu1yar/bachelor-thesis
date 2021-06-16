@@ -1,0 +1,54 @@
+\renewcommand{\author}[1]{\def\mtauthortext{#1}}
+\renewcommand{\title}[1]{\def\mttitletext{#1}}
+\newcommand{\supervisor}[1]{\def\mtsupervisortext{#1}}
+\newcommand{\consultant}[1]{\def\mtconsultanttext{#1}}
+\newcommand{\groupnum}[1]{\def\mtgroupnumtext{#1}}
+\newcommand{\department}[1]{\def\mtdepartmenttext{#1}}
+\newcommand{\faculty}[1]{\def\mtfacultytext{#1}}
+
+\renewcommand{\titlepage}{%
+    \thispagestyle{empty}
+    \begin{center}
+    Федеральное государственное автономное образовательное учреждение\break высшего образования\par
+    <<Московский физико-технический институт (национальный исследовательский университет)>>\par
+    \mtfacultytext{}\par
+    \mtdepartmenttext{}\par
+\end{center}
+%
+  {\bf Направление подготовки}: 01.03.02 Прикладная математика и информатика\newline
+  {\bf Направленность (профиль) подготовки}: Прикладная математика и компьютерные науки\par
+%
+  {
+\topskip0pt
+\vspace*{\fill}
+\begin{center}
+      {\bf\LARGE \mttitletext{}}\par
+      (бакалаврская работа)
+\end{center}
+\vspace*{\fill}
+  }
+%
+\hfill
+\begin{minipage}[t]{7cm}
+    {\bf Студент: \newline}
+    \mtauthortext{}\newline
+\vspace{-3mm}
+\rule{7cm}{0.15mm}
+\centerline{\small\it (подпись студента)}\newline
+    {\bf Научный руководитель: \newline}
+    \mtsupervisortext{}\newline
+\vspace{-3mm}
+\rule{7cm}{0.15mm}
+\centerline{\small\it (подпись научного руководителя)}
+    {\bf Консультант: \newline}
+    \mtconsultanttext{}\newline
+\vspace{-3mm}
+\rule{7cm}{0.15mm}
+\centerline{\small\it (подпись консультанта)}
+\end{minipage}
+%
+\vspace*{\fill}
+\begin{center}
+      Москва 2021
+\end{center}
+}
