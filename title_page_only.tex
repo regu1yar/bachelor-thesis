@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel} 
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=1.5cm]{geometry}
+\usepackage{amssymb}
+\usepackage{esint}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{indentfirst}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{csquotes}
+
+\usepackage{abstract}
+\renewcommand{\abstractnamefont}{\normalfont\large\bfseries}
+
+\usepackage{minted}
+
+\usepackage{listings}
+\renewcommand{\listingscaption}{Листинг}
+
+\usepackage{setspace}
+
+\usepackage{etoolbox}
+\renewcommand\refname{Список литературы}
+\apptocmd{\thebibliography}{\csname phantomsection\endcsname\addcontentsline{toc}{section}{\refname}}{}{}
+
+\usepackage{graphicx}
+
+\usepackage[font=large,justification=centering]{caption}
+\DeclareCaptionLabelSeparator{dash}{ --- }
+\captionsetup{
+  labelsep=dash
+}
+
+\usepackage{titlesec}
+\usepackage[titletoc]{appendix}
+
+\setstretch{1.35}
+\setlength{\abovecaptionskip}{3pt}
+\setlength{\parindent}{1.25cm}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Теорема}[section]
+
+\theoremstyle{plain}
+\newtheorem{consequence}[theorem]{Следствие}
+
+\theoremstyle{plain}
+\newtheorem{lemma}{Лемма}[section]
+
+\theoremstyle{plain}
+\newtheorem{claim}{Утверждение}[section]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Определение}[section]
+
+\theoremstyle{remark}
+\newtheorem{remark}{Замечание}[section]
+
+\theoremstyle{plain}
+\newtheorem{exercise}{Упражнение}[section]
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\info}{Info}
+\DeclareMathOperator*{\real}{real}
+\DeclareMathOperator*{\naive}{naive}
+\DeclareMathOperator*{\best}{Best}
+\DeclareMathOperator*{\routes}{Routes}
+\DeclareMathOperator*{\reduced}{reduced}
+
+\input{title_page}
+
+\title{Исследование и оптимизация способов выполнения операции AllReduce в сети с двухуровневой топологией}
+\author{Климовицкий Роман Григорьевич}
+\supervisor{Звонов Денис Владимирович}
+\supervisordegree{магистр, старший преподаватель}
+\consultant{Шворин Артем Борисович}
+\groupnum{798}
+\faculty{Физтех-школа Прикладной Математики и Информатики}
+\department{Кафедра банковских информационных технологий}
+
+\begin{document}
+
+\titlepage
+\cleardoublepage
+\setstretch{1.35}
+\setcounter{page}{2}
+
+\end{document}
